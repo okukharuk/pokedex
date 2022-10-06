@@ -73,6 +73,7 @@ const HomePage = () => {
                 options={selectOptions} 
                 onChange={handleSelect} 
                 isClearable={true}
+                placeholder="Filter by type"
             />
             <div className='flex flex-row justify-center items-center w-full h-full overflow-hidden'>
                 {isError ?
