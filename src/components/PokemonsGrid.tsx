@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Pokemon, typeOption } from '../types/types';
 import GridCard from './GridCard';
 
@@ -17,7 +17,7 @@ const PokemonsGrid: React.FC<PokemonsGridProps> = ({isError, isLoading, selected
                     {
                     pokemons.map((pokemon, index) => {
                         for (const type of pokemon.types) {
-                            if (type.type.name == selectedType?.type || selectedType == null) {
+                            if (type.type.name === selectedType?.type || selectedType === null) {
                                 return (
                                     <GridCard 
                                         pokemon={pokemon} 

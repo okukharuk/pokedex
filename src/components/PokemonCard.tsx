@@ -12,8 +12,8 @@ const PokemonCard: React.FC<PokemonCardProps> = ({pokemon, onClose}) => {
     return (
         <div className='flex flex-col w-80 h-fit absolute bg-white lg:relative border-2 items-center justify-center rounded-lg h-[70%] ml-0 lg:ml-4'>
                         <div className='flex flex-col items-center px-4 w-full max-h-full'>
-                            <img src={crossX} className='w-12 absolute right-[-1rem] top-[-1rem] border-2 rounded-full bg-white cursor-pointer' onClick={onClose}/>
-                            <img src={pokemon.image} className='h-[40%] object-contain'/>
+                            <img src={crossX} alt='close' className='w-12 absolute right-[-1rem] top-[-1rem] border-2 rounded-full bg-white cursor-pointer' onClick={onClose}/>
+                            <img src={pokemon.image} alt={pokemon.name} className='h-[40%] object-contain'/>
                             <div className='text-3xl font-semibold h-[8%]'>{pokemon.name}</div>
                             <div className='flex flex-row w-2/3 my-1 h-[6%] text-sm justify-center'>
                                     {

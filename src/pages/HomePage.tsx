@@ -60,7 +60,7 @@ const HomePage = () => {
     }
 
     useEffect(() => {
-        if(page == 0) fetchPokemons()
+        if(page === 0) fetchPokemons()
     }, [])
 
     return (
