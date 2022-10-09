@@ -17,7 +17,7 @@ const GridCard: React.FC<GridCardProps> = ({pokemon, onCardClick})  => {
             <div className='flex flex-row w-full justify-center'>
                 {
                 pokemon.types.map((type) => {
-                    const typeClass = 'rounded text-center w-1/2 mx-1 bg-gradient-to-t to-white border-2 ' + type.color;
+                    const typeClass = 'rounded text-center w-1/2 mx-1 bg-gradient-to-t to-white border-2 text-xs lg:text-sm ' + type.color;
                     return (
                         <div className={typeClass}>
                             {type.type.name} 
